@@ -1,6 +1,4 @@
 ---
-layout: home
-title: Početna
 ---
 
 Dobrodošli na moju stranicu! Ovdje pratim svoj napredak u 3D printanju i bojanju minijatura.

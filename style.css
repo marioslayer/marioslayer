@@ -1,0 +1,111 @@
+/* Reset osnovnih postavki */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Pozadina cijele stranice */
+body {
+    background: #0d0e12; /* Tamna pozadina */
+    /* Ako želiš sliku za pozadinu, odkomentiraj liniju ispod: */
+    /* background: url('background.jpg') no-repeat center center fixed; background-size: cover; */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Kontejner koji drži sve elemente na sredini */
+.container {
+    width: 100%;
+    max-width: 580px;
+    text-align: center;
+}
+
+/* Profilni dio */
+header {
+    margin-bottom: 32px;
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff4a5a; /* Boja prstena oko slike */
+    margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(255, 74, 90, 0.2);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.bio {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Stilovi za gumbe (Linkove) */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.link-card {
+    background: rgba(255, 255, 255, 0.05); /* Poluprozirna pozadina gumba */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Efekt kada se mišem prijeđe preko gumba (Hover) */
+.link-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #ff4a5a; /* Gumb dobije crveni rub na hover */
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.link-card i {
+    font-size: 1.2rem;
+    width: 24px;
+    text-align: center;
+}
+
+/* Donje ikonice */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #9ca3af;
+    font-size: 1.3rem;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #ff4a5a;
+}

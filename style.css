@@ -8,15 +8,22 @@
 
 /* Pozadina cijele stranice */
 body {
-    background: #0d0e12; /* Tamna pozadina */
-    /* Ako želiš sliku za pozadinu, odkomentiraj liniju ispod: */
-    /* background: url('background.jpg') no-repeat center center fixed; background-size: cover; */
+    margin: 0;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    
+    background-color: #0d0e12;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(255, 74, 90, 0.15) 0px, transparent 50%),   /* Suptilni crveni sjaj gore lijevo */
+        radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%), /* Suptilni plavi sjaj gore desno */
+        radial-gradient(at 50% 100%, rgba(168, 85, 247, 0.18) 0px, transparent 60%);/* Jači ljubičasti sjaj s dna prema sredini */
+        
+    background-attachment: fixed; 
+    overflow-x: hidden;
 }
 
 /* Kontejner koji drži sve elemente na sredini */

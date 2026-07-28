@@ -1,4 +1,3 @@
-/* Reset osnovnih postavki */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Pozadina cijele stranice */
 body {
     margin: 0;
     color: #ffffff;
@@ -18,22 +16,20 @@ body {
     
     background-color: #0d0e12;
     background-image: 
-        radial-gradient(at 0% 0%, rgba(255, 74, 90, 0.15) 0px, transparent 50%),   /* Suptilni crveni sjaj gore lijevo */
-        radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%), /* Suptilni plavi sjaj gore desno */
-        radial-gradient(at 50% 100%, rgba(168, 85, 247, 0.18) 0px, transparent 60%);/* Jači ljubičasti sjaj s dna prema sredini */
+        radial-gradient(at 0% 0%, rgba(255, 74, 90, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(168, 85, 247, 0.18) 0px, transparent 60%);
         
     background-attachment: fixed; 
     overflow-x: hidden;
 }
 
-/* Kontejner koji drži sve elemente na sredini */
 .container {
     width: 100%;
     max-width: 580px;
     text-align: center;
 }
 
-/* Profilni dio */
 header {
     margin-bottom: 32px;
 }
@@ -43,7 +39,7 @@ header {
     height: 110px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #ff4a5a; /* Boja prstena oko slike */
+    border: 3px solid #ff4a5a;
     margin-bottom: 16px;
     box-shadow: 0 8px 24px rgba(255, 74, 90, 0.2);
 }
@@ -62,7 +58,6 @@ h1 {
     margin: 0 auto;
 }
 
-/* Stilovi za gumbe (Linkove) */
 .links {
     display: flex;
     flex-direction: column;
@@ -71,7 +66,7 @@ h1 {
 }
 
 .link-card {
-    background: rgba(255, 255, 255, 0.05); /* Poluprozirna pozadina gumba */
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #ffffff;
     text-decoration: none;
@@ -86,10 +81,9 @@ h1 {
     transition: all 0.25s ease-in-out;
 }
 
-/* Efekt kada se mišem prijeđe preko gumba (Hover) */
 .link-card:hover {
     background: rgba(255, 255, 255, 0.12);
-    border-color: #ff4a5a; /* Gumb dobije crveni rub na hover */
+    border-color: #ff4a5a;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
@@ -100,7 +94,6 @@ h1 {
     text-align: center;
 }
 
-/* Donje ikonice */
 .social-icons {
     display: flex;
     justify-content: center;

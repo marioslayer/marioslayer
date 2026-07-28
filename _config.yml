@@ -1,3 +1,5 @@
 name: Moj 3D Print & Painting Portfolio
 description: Galerija mojih 3D printeva i obojanih minijatura.
-remote_theme: curtismchale/html5up-massively-jekyll
+plugins:
+  - jekyll-remote-theme
+remote_theme: daattali/beautiful-jekyll
